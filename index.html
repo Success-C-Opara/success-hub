@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Success Digital Hub – AI • Finance • Hosting Deals</title>
+  <meta name="description" content="Curated AI tools, finance & investment apps, and hosting/domain deals. Start fast, save money, and build your online income." />
+  <meta name="robots" content="index,follow" />
+
+  <!-- Open Graph / Social -->
+  <meta property="og:title" content="Success Digital Hub – AI • Finance • Hosting Deals" />
+  <meta property="og:description" content="Curated AI tools, finance & investment apps, and hosting/domain deals." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://yourusername.github.io/" />
+  <meta property="og:image" content="https://yourusername.github.io/cover.png" />
+
+  <style>
+    :root {
+      --bg: #0b0f14;
+      --card: #101620;
+      --text: #e8eef7;
+      --muted: #9fb3c8;
+      --brand: #4cc9f0;
+      --accent: #80ffdb;
+      --danger: #ff6b6b;
+      --ok: #51cf66;
+      --warning: #ffd43b;
+      --shadow: 0 10px 30px rgba(0,0,0,.3);
+      --radius: 16px;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font-family: system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, sans-serif; }
+    a { color: var(--brand); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .container { max-width: 1100px; margin: 0 auto; padding: 20px; }
+
+    header {
+      display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 16px 0;
+    }
+    .logo { display: flex; align-items: center; gap: 12px; }
+    .logo .mark { width: 40px; height: 40px; border-radius: 12px; background: linear-gradient(135deg, var(--brand), var(--accent)); box-shadow: var(--shadow); }
+    .logo h1 { font-size: 20px; margin: 0; letter-spacing: .2px; }
+
+    .cta-bar { display: flex; gap: 10px; flex-wrap: wrap; }
+    .btn { border: 0; padding: 10px 14px; border-radius: 12px; background: var(--brand); color: #021018; font-weight: 700; cursor: pointer; box-shadow: var(--shadow); }
+    .btn.secondary { background: transparent; border: 1px solid #203040; color: var(--text); }
+
+    .hero { margin-top: 12px; background: radial-gradient(1200px 400px at 10% -20%, rgba(76,201,240,.15), transparent 60%), radial-gradient(1000px 400px at 100% 0%, rgba(128,255,219,.12), transparent 60%), var(--card); border: 1px solid #1b2533; padding: 28px; border-radius: var(--radius); box-shadow: var(--shadow);}
+    .hero h2 { margin: 0 0 10px; font-size: 28px; }
+    .hero p { margin: 0; color: var(--muted); }
+    .hero .chips { margin-top: 16px; display: flex; gap: 8px; flex-wrap: wrap; }
+    .chip { font-size: 12px; border: 1px solid #233245; padding: 6px 10px; border-radius: 999px; color: var(--muted); }
+
+    .grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 16px; margin-top: 22px; }
+    .col-6 { grid-column: span 6; }
+    .col-12 { grid-column: span 12; }
+    @media (max-width: 900px) { .col-6 { grid-column: span 12; } }
+
+    .card { background: var(--card); border: 1px solid #1b2533; border-radius: var(--radius); padding: 18px; box-shadow: var(--shadow); }
+    .card h3 { margin: 0 0 6px; font-size: 18px; }
+    .card p { margin: 0; color: var(--muted); }
+
+    .offers { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-top: 12px; }
+    @media (max-width: 700px) { .offers { grid-template-columns: 1fr; } }
+
+    .offer { background: #0e141d; border: 1px solid #1b2533; border-radius: 14px; padding: 14px; display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 10px; }
+    .offer h4 { margin: 0; font-size: 16px; }
+    .offer small { color: var(--muted); }
+    .offer .actions { display: flex; gap: 8px; align-items: center; }
+    .offer .go { background: var(--accent); color: #06221e; font-weight: 700; border: 0; padding: 8px 12px; border-radius: 10px; cursor: pointer; }
+    .offer .track { font-size: 12px; color: var(--muted); }
+
+    .note { font-size: 12px; color: var(--muted); margin-top: 10px; }
+
+    .stats { margin-top: 18px; }
+    table { width: 100%; border-collapse: collapse; }
+    th, td { padding: 10px; border-bottom: 1px solid #1b2533; text-align: left; font-size: 14px; }
+    th { color: #aac1d8; }
+
+    footer { margin: 28px 0 50px; color: var(--muted); font-size: 13px; }
+    .badge { display:inline-block; padding: 6px 10px; border: 1px solid #223246; border-radius: 999px; margin-right: 8px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <div class="mark" aria-hidden="true"></div>
+        <h1>Success Digital Hub</h1>
+      </div>
+      <div class="cta-bar">
+        <button class="btn secondary" id="copyLink">Copy This Page Link</button>
+        <a class="btn" href="#offers">Browse Offers</a>
+      </div>
+    </header>
+
+    <section class="hero">
+      <h2>Launch Your Online Income: AI Tools • Finance Apps • Hosting Deals</h2>
+      <p>Hand-picked offers that help you build fast. We recommend only useful tools and beginner-friendly platforms. <strong>No fluff.</strong></p>
+      <div class="chips">
+        <span class="chip">Nigeria → USD payouts (Payoneer)</span>
+        <span class="chip">Free Start • No Capital</span>
+        <span class="chip">CPA + High-Ticket Affiliate</span>
+      </div>
+    </section>
+
+    <!-- OFFERS -->
+    <section id="offers" class="grid">
+      <!-- Finance & Investment (CPA) -->
+      <div class="col-6">
+        <div class="card">
+          <h3>Finance & Investment (CPA)</h3>
+          <p>Fast approvals & simple actions. Great for short-form content traffic.</p>
+          <div class="offers">
+            <div class="offer" data-offer-id="finance1">
+              <div>
+                <h4>Free Credit/Finance Tool – USA</h4>
+                <small>CPA Lead • Est. $15–$40 per verified lead</small>
+              </div>
+              <div class="actions">
+                <a class="go outbound" data-network="CPAGrip" href="REPLACE_WITH_CPAGRIP_FINANCE_URL" target="_blank" rel="nofollow">Get Deal</a>
+                <span class="track">Clicks: <b data-clicks>0</b></span>
+              </div>
+            </div>
+            <div class="offer" data-offer-id="finance2">
+              <div>
+                <h4>Investing App Signup – Tier 1</h4>
+                <small>CPA Lead/FTD • Est. $30–$120 per lead</small>
+              </div>
+              <div class="actions">
+                <a class="go outbound" data-network="OGAds" href="REPLACE_WITH_OGADS_INVEST_URL" target="_blank" rel="nofollow">Get Deal</a>
+                <span class="track">Clicks: <b data-clicks>0</b></span>
+              </div>
+            </div>
+          </div>
+          <p class="note">Tip: Use TikTok/Shorts: “Best beginner investing apps” → link in bio to this page.</p>
+        </div>
+      </div>
+
+      <!-- AI Tools (CPA / SaaS Trials) -->
+      <div class="col-6">
+        <div class="card">
+          <h3>AI & Productivity Tools</h3>
+          <p>Trending categories with strong curiosity. Perfect for list-style videos.</p>
+          <div class="offers">
+            <div class="offer" data-offer-id="ai1">
+              <div>
+                <h4>AI Writing/Chat Tool – Free Trial</h4>
+                <small>CPA/SaaS • Est. $5–$25 per signup</small>
+              </div>
+              <div class="actions">
+                <a class="go outbound" data-network="OGAds" href="REPLACE_WITH_OGADS_AI_URL" target="_blank" rel="nofollow">Try Now</a>
+                <span class="track">Clicks: <b data-clicks>0</b></span>
+              </div>
+            </div>
+            <div class="offer" data-offer-id="ai2">
+              <div>
+                <h4>VPN/Privacy App – Free Trial</h4>
+                <small>CPA • Est. $10–$60 per signup</small>
+              </div>
+              <div class="actions">
+                <a class="go outbound" data-network="CPAGrip" href="REPLACE_WITH_CPAGRIP_VPN_URL" target="_blank" rel="nofollow">Secure Access</a>
+                <span class="track">Clicks: <b data-clicks>0</b></span>
+              </div>
+            </div>
+          </div>
+          <p class="note">Create short videos: “3 Free AI tools you’ll actually use”.</p>
+        </div>
+      </div>
+
+      <!-- Hosting & Domains (High-Ticket Affiliate) -->
+      <div class="col-12">
+        <div class="card">
+          <h3>Hosting & Domains (High-Ticket)</h3>
+          <p>Higher payouts per sale. Great for tutorials: blog setup, portfolio website, AI tool showcase.</p>
+          <div class="offers">
+            <div class="offer" data-offer-id="host1">
+              <div>
+                <h4>Bluehost – Blog/Business Hosting</h4>
+                <small>Affiliate • Est. $65–$130 per sale</small>
+              </div>
+              <div class="actions">
+                <a class="go outbound" data-network="Bluehost" href="REPLACE_WITH_BLUEHOST_AFFILIATE" target="_blank" rel="nofollow">Start Hosting</a>
+                <span class="track">Clicks: <b data-clicks>0</b></span>
+              </div>
+            </div>
+            <div class="offer" data-offer-id="host2">
+              <div>
+                <h4>Namecheap – Domains & SSL</h4>
+                <small>Affiliate • 20–50% commission</small>
+              </div>
+              <div class="actions">
+                <a class="go outbound" data-network="Namecheap" href="REPLACE_WITH_NAMECHEAP_AFFILIATE" target="_blank" rel="nofollow">Find a Domain</a>
+                <span class="track">Clicks: <b data-clicks>0</b></span>
+              </div>
+            </div>
+            <div class="offer" data-offer-id="host3">
+              <div>
+                <h4>Wix – Website Builder</h4>
+                <small>Affiliate • ~$100 per Premium</small>
+              </div>
+              <div class="actions">
+                <a class="go outbound" data-network="Wix" href="REPLACE_WITH_WIX_AFFILIATE" target="_blank" rel="nofollow">Build with Wix</a>
+                <span class="track">Clicks: <b data-clicks>0</b></span>
+              </div>
+            </div>
+          </div>
+          <p class="note">Content idea: “Start a blog in 10 minutes” → show steps → link here.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Simple Stats / Tracking Table (LocalStorage only) -->
+    <section class="stats card">
+      <h3>On‑Page Click Tracking (Private)</h3>
+      <p class="note">Counts clicks per button locally (stored in your browser via LocalStorage). Export anytime.</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Offer ID</th>
+            <th>Network</th>
+            <th>Clicks</th>
+            <th>Last Click</th>
+          </tr>
+        </thead>
+        <tbody id="statsBody"></tbody>
+      </table>
+      <div style="margin-top:12px; display:flex; gap:8px; flex-wrap:wrap;">
+        <button class="btn secondary" id="exportCSV">Export CSV</button>
+        <button class="btn secondary" id="resetClicks">Reset Clicks</button>
+      </div>
+    </section>
+
+    <footer>
+      <div class="badge">Telegram: <a href="https://t.me/yourusername" target="_blank">@yourusername</a></div>
+      <div class="badge">Email: <a href="mailto:youremail@example.com">youremail@example.com</a></div>
+      <p style="margin-top:12px;">Disclosure: Some links are affiliate/CPA links. We may earn a commission at no extra cost to you. We do not allow bots, VPN/proxy abuse, or self-completing offers.</p>
+    </footer>
+  </div>
+
+  <script>
+    /* ======================================================
+       Lightweight Tracking + UTM propagation (no backend)
+       - Tracks clicks per offer in LocalStorage
+       - Appends UTM params from current URL to outbound links
+       - Exports stats to CSV for your Google Sheet
+       ====================================================== */
+
+    const LS_KEY = 'sdh_click_stats_v1';
+
+    const readStats = () => JSON.parse(localStorage.getItem(LS_KEY) || '{}');
+    const writeStats = (data) => localStorage.setItem(LS_KEY, JSON.stringify(data));
+
+    function updateTable() {
+      const stats = readStats();
+      const tbody = document.getElementById('statsBody');
+      tbody.innerHTML = '';
+      Object.values(stats).forEach(row => {
+        const tr = document.createElement('tr');
+        tr.innerHTML = `<td>${row.offerId}</td><td>${row.network}</td><td>${row.clicks}</td><td>${row.lastClick || '-'}</td>`;
+        tbody.appendChild(tr);
+      });
+      // Reflect per-offer counters in UI
+      document.querySelectorAll('.offer').forEach(card => {
+        const id = card.dataset.offerId;
+        const clicks = stats[id]?.clicks || 0;
+        const el = card.querySelector('[data-clicks]');
+        if (el) el.textContent = clicks;
+      });
+    }
+
+    function appendUtmParamsToLinks() {
+      const url = new URL(window.location.href);
+      const utmParams = ['utm_source','utm_medium','utm_campaign','utm_content','utm_term'];
+      const searchParams = new URLSearchParams();
+      utmParams.forEach(p => { if (url.searchParams.get(p)) searchParams.set(p, url.searchParams.get(p)); });
+      const suffix = searchParams.toString();
+      if (!suffix) return;
+      document.querySelectorAll('a.outbound').forEach(a => {
+        try {
+          const link = new URL(a.href);
+          // preserve existing params
+          const linkParams = new URLSearchParams(link.search);
+          searchParams.forEach((v,k)=> linkParams.set(k,v));
+          link.search = linkParams.toString();
+          a.href = link.toString();
+        } catch(e) { /* ignore invalid URLs (placeholders) */ }
+      });
+    }
+
+    function handleClicks() {
+      document.querySelectorAll('a.outbound').forEach(a => {
+        a.addEventListener('click', () => {
+          const card = a.closest('.offer');
+          if (!card) return;
+          const offerId = card.dataset.offerId;
+          const network = a.dataset.network || 'N/A';
+          const now = new Date().toISOString();
+          const stats = readStats();
+          stats[offerId] = stats[offerId] || { offerId, network, clicks: 0, lastClick: null };
+          stats[offerId].clicks += 1;
+          stats[offerId].lastClick = now;
+          writeStats(stats);
+          updateTable();
+        });
+      });
+    }
+
+    function exportCSV() {
+      const stats = readStats();
+      const rows = [['offer_id','network','clicks','last_click']];
+      Object.values(stats).forEach(s => rows.push([s.offerId, s.network, s.clicks, s.lastClick || '']));
+      const csv = rows.map(r => r.map(v => '"'+String(v).replaceAll('"','""')+'"').join(',')).join('\n');
+      const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url; a.download = 'click_stats.csv'; a.click();
+      URL.revokeObjectURL(url);
+    }
+
+    document.getElementById('exportCSV').addEventListener('click', exportCSV);
+    document.getElementById('resetClicks').addEventListener('click', () => { localStorage.removeItem(LS_KEY); updateTable(); });
+    document.getElementById('copyLink').addEventListener('click', async () => {
+      try { await navigator.clipboard.writeText(window.location.href); alert('Link copied!'); } catch(e) { alert('Copy failed.'); }
+    });
+
+    // Init
+    appendUtmParamsToLinks();
+    handleClicks();
+    updateTable();
+  </script>
+</body>
+</html>
+
