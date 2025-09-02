@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Success Digital Hub – AI • Finance • Hosting Deals</title>
-  <meta name="description" content="Curated AI tools, finance & investment apps, and hosting/domain deals. Start fast, save money, and build your online income." />
+  <title>Success Digital Hub – Build with Wix & Essential Tools</title>
+  <meta name="description" content="Learn why Wix is a top website builder, see real use-cases, and start your site today. Plus: domains, branded email, design, and marketing tools that pair perfectly with Wix." />
   <meta name="robots" content="index,follow" />
 
   <!-- Open Graph / Social -->
-  <meta property="og:title" content="Success Digital Hub – AI • Finance • Hosting Deals" />
-  <meta property="og:description" content="Curated AI tools, finance & investment apps, and hosting/domain deals." />
+  <meta property="og:title" content="Success Digital Hub – Build with Wix & Essential Tools" />
+  <meta property="og:description" content="Launch a professional website with Wix. Step-by-step guidance, examples, and the best supporting tools." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://yourusername.github.io/" />
-  <meta property="og:image" content="https://yourusername.github.io/cover.png" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop" />
 
   <style>
     :root {
@@ -22,7 +22,6 @@
       --muted: #9fb3c8;
       --brand: #4cc9f0;
       --accent: #80ffdb;
-      --danger: #ff6b6b;
       --ok: #51cf66;
       --warning: #ffd43b;
       --shadow: 0 10px 30px rgba(0,0,0,.3);
@@ -32,12 +31,11 @@
     html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font-family: system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, sans-serif; }
     a { color: var(--brand); text-decoration: none; }
     a:hover { text-decoration: underline; }
+    img { max-width: 100%; display: block; border-radius: 12px; }
 
     .container { max-width: 1100px; margin: 0 auto; padding: 20px; }
 
-    header {
-      display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 16px 0;
-    }
+    header { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 16px 0; }
     .logo { display: flex; align-items: center; gap: 12px; }
     .logo .mark { width: 40px; height: 40px; border-radius: 12px; background: linear-gradient(135deg, var(--brand), var(--accent)); box-shadow: var(--shadow); }
     .logo h1 { font-size: 20px; margin: 0; letter-spacing: .2px; }
@@ -53,9 +51,11 @@
     .chip { font-size: 12px; border: 1px solid #233245; padding: 6px 10px; border-radius: 999px; color: var(--muted); }
 
     .grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 16px; margin-top: 22px; }
+    .col-4 { grid-column: span 4; }
     .col-6 { grid-column: span 6; }
+    .col-8 { grid-column: span 8; }
     .col-12 { grid-column: span 12; }
-    @media (max-width: 900px) { .col-6 { grid-column: span 12; } }
+    @media (max-width: 900px) { .col-6, .col-4, .col-8 { grid-column: span 12; } }
 
     .card { background: var(--card); border: 1px solid #1b2533; border-radius: var(--radius); padding: 18px; box-shadow: var(--shadow); }
     .card h3 { margin: 0 0 6px; font-size: 18px; }
@@ -64,14 +64,20 @@
     .offers { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-top: 12px; }
     @media (max-width: 700px) { .offers { grid-template-columns: 1fr; } }
 
-    .offer { background: #0e141d; border: 1px solid #1b2533; border-radius: 14px; padding: 14px; display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 10px; }
+    .offer { background: #0e141d; border: 1px solid #1b2533; border-radius: 14px; padding: 14px; display: grid; grid-template-columns: 60px 1fr auto; align-items: center; gap: 12px; }
     .offer h4 { margin: 0; font-size: 16px; }
-    .offer small { color: var(--muted); }
+    .offer small { color: var(--muted); display: block; margin-top: 2px; }
     .offer .actions { display: flex; gap: 8px; align-items: center; }
     .offer .go { background: var(--accent); color: #06221e; font-weight: 700; border: 0; padding: 8px 12px; border-radius: 10px; cursor: pointer; }
     .offer .track { font-size: 12px; color: var(--muted); }
 
     .note { font-size: 12px; color: var(--muted); margin-top: 10px; }
+
+    .bullets { margin: 10px 0 0; padding-left: 18px; color: var(--muted); }
+    .bullets li { margin: 6px 0; }
+
+    .gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 12px; }
+    @media (max-width: 700px) { .gallery { grid-template-columns: 1fr; } }
 
     .stats { margin-top: 18px; }
     table { width: 100%; border-collapse: collapse; }
@@ -91,129 +97,182 @@
       </div>
       <div class="cta-bar">
         <button class="btn secondary" id="copyLink">Copy This Page Link</button>
-        <a class="btn" href="#offers">Browse Offers</a>
+        <a class="btn" href="#start-wix">Start with Wix</a>
       </div>
     </header>
 
     <section class="hero">
-      <h2>Launch Your Online Income: AI Tools • Finance Apps • Hosting Deals</h2>
-      <p>Hand-picked offers that help you build fast. We recommend only useful tools and beginner-friendly platforms. <strong>No fluff.</strong></p>
-      <div class="chips">
-        <span class="chip">Nigeria → USD payouts (Payoneer)</span>
-        <span class="chip">Free Start • No Capital</span>
-        <span class="chip">CPA + High-Ticket Affiliate</span>
+      <div class="grid">
+        <div class="col-8">
+          <h2>Launch a Professional Website with Wix</h2>
+          <p>Wix makes it easy to build a beautiful, secure website—no coding needed. Pick a template, customize with drag-and-drop, add bookings, a store, or a blog, and publish in minutes.</p>
+          <div class="chips">
+            <span class="chip">Drag-and-drop editor</span>
+            <span class="chip">Templates for any niche</span>
+            <span class="chip">SEO & analytics</span>
+            <span class="chip">E-commerce & bookings</span>
+          </div>
+          <div style="margin-top:14px; display:flex; gap:10px; flex-wrap:wrap;">
+            <a class="btn outbound" data-network="Wix" href="REPLACE_WITH_WIX_AFFILIATE" target="_blank" rel="nofollow noopener noreferrer sponsored">Build with Wix</a>
+            <a class="btn secondary" href="#why-wix">Why Wix?</a>
+          </div>
+        </div>
+        <div class="col-4">
+          <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=900&auto=format&fit=crop" alt="Person building a website on a laptop" />
+        </div>
       </div>
     </section>
 
-    <!-- OFFERS -->
-    <section id="offers" class="grid">
-      <!-- Finance & Investment (CPA) -->
+    <!-- WHY WIX -->
+    <section id="why-wix" class="grid">
       <div class="col-6">
         <div class="card">
-          <h3>Finance & Investment (CPA)</h3>
-          <p>Fast approvals & simple actions. Great for short-form content traffic.</p>
-          <div class="offers">
-            <div class="offer" data-offer-id="finance1">
-              <div>
-                <h4>Free Credit/Finance Tool – USA</h4>
-                <small>CPA Lead • Est. $15–$40 per verified lead</small>
-              </div>
-              <div class="actions">
-                <a class="go outbound" data-network="CPAGrip" href="REPLACE_WITH_CPAGRIP_FINANCE_URL" target="_blank" rel="nofollow">Get Deal</a>
-                <span class="track">Clicks: <b data-clicks>0</b></span>
-              </div>
-            </div>
-            <div class="offer" data-offer-id="finance2">
-              <div>
-                <h4>Investing App Signup – Tier 1</h4>
-                <small>CPA Lead/FTD • Est. $30–$120 per lead</small>
-              </div>
-              <div class="actions">
-                <a class="go outbound" data-network="OGAds" href="REPLACE_WITH_OGADS_INVEST_URL" target="_blank" rel="nofollow">Get Deal</a>
-                <span class="track">Clicks: <b data-clicks>0</b></span>
-              </div>
-            </div>
+          <h3>Why Choose Wix</h3>
+          <ul class="bullets">
+            <li><strong>Fast start:</strong> AI-assisted setup and 900+ templates.</li>
+            <li><strong>All-in-one:</strong> hosting, security, backups, and a global CDN included.</li>
+            <li><strong>Sell anything:</strong> products, services, digital goods, courses, subscriptions.</li>
+            <li><strong>Grow:</strong> built-in SEO, analytics, email automations, and app integrations.</li>
+            <li><strong>Scales with you:</strong> upgrade features as your business grows.</li>
+          </ul>
+          <div style="margin-top:12px;">
+            <a class="btn outbound" data-network="Wix" href="REPLACE_WITH_WIX_AFFILIATE" target="_blank" rel="nofollow noopener noreferrer sponsored">Start Free on Wix</a>
           </div>
-          <p class="note">Tip: Use TikTok/Shorts: “Best beginner investing apps” → link in bio to this page.</p>
         </div>
       </div>
-
-      <!-- AI Tools (CPA / SaaS Trials) -->
       <div class="col-6">
         <div class="card">
-          <h3>AI & Productivity Tools</h3>
-          <p>Trending categories with strong curiosity. Perfect for list-style videos.</p>
-          <div class="offers">
-            <div class="offer" data-offer-id="ai1">
-              <div>
-                <h4>AI Writing/Chat Tool – Free Trial</h4>
-                <small>CPA/SaaS • Est. $5–$25 per signup</small>
-              </div>
-              <div class="actions">
-                <a class="go outbound" data-network="OGAds" href="REPLACE_WITH_OGADS_AI_URL" target="_blank" rel="nofollow">Try Now</a>
-                <span class="track">Clicks: <b data-clicks>0</b></span>
-              </div>
-            </div>
-            <div class="offer" data-offer-id="ai2">
-              <div>
-                <h4>VPN/Privacy App – Free Trial</h4>
-                <small>CPA • Est. $10–$60 per signup</small>
-              </div>
-              <div class="actions">
-                <a class="go outbound" data-network="CPAGrip" href="REPLACE_WITH_CPAGRIP_VPN_URL" target="_blank" rel="nofollow">Secure Access</a>
-                <span class="track">Clicks: <b data-clicks>0</b></span>
-              </div>
-            </div>
+          <h3>What You Can Build</h3>
+          <div class="gallery">
+            <img src="https://images.unsplash.com/photo-1529336953121-ad5a0d43d0d2?q=80&w=800&auto=format&fit=crop" alt="Online store example" />
+            <img src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?q=80&w=800&auto=format&fit=crop" alt="Portfolio website example" />
+            <img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=800&auto=format&fit=crop" alt="Business website example" />
           </div>
-          <p class="note">Create short videos: “3 Free AI tools you’ll actually use”.</p>
+          <p class="note">Images are illustrative—your site design is fully customizable.</p>
         </div>
       </div>
+    </section>
 
-      <!-- Hosting & Domains (High-Ticket Affiliate) -->
+    <!-- STEP BY STEP -->
+    <section id="start-wix" class="grid">
       <div class="col-12">
         <div class="card">
-          <h3>Hosting & Domains (High-Ticket)</h3>
-          <p>Higher payouts per sale. Great for tutorials: blog setup, portfolio website, AI tool showcase.</p>
+          <h3>Quick Start: Build Your Site in 5 Steps</h3>
+          <ol class="bullets" style="list-style: decimal;">
+            <li>Click <em>Build with Wix</em> and create a free account.</li>
+            <li>Choose a template or use the AI site builder for a tailored start.</li>
+            <li>Customize pages with drag-and-drop: text, images, sections, and apps.</li>
+            <li>Add features: online store, bookings, blog, payments, and SEO basics.</li>
+            <li>Connect a domain and publish. Upgrade to a Premium plan when ready.</li>
+          </ol>
+          <div style="margin-top:12px;">
+            <a class="btn outbound" data-network="Wix" href="REPLACE_WITH_WIX_AFFILIATE" target="_blank" rel="nofollow noopener noreferrer sponsored">Try Wix Free</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMPLEMENTARY TOOLS (NON-CPA) -->
+    <section id="tools" class="grid">
+      <div class="col-12">
+        <div class="card">
+          <h3>Essential Tools to Pair with Wix</h3>
+          <p>These services complement your Wix site and help you look professional from day one.</p>
+
           <div class="offers">
-            <div class="offer" data-offer-id="host1">
+            <div class="offer" data-offer-id="domains">
+              <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=300&auto=format&fit=crop" alt="Domain search illustration" />
               <div>
-                <h4>Bluehost – Blog/Business Hosting</h4>
-                <small>Affiliate • Est. $65–$130 per sale</small>
+                <h4>Get a Custom Domain</h4>
+                <small>Claim your brand name and connect it to your Wix site.</small>
               </div>
               <div class="actions">
-                <a class="go outbound" data-network="Bluehost" href="REPLACE_WITH_BLUEHOST_AFFILIATE" target="_blank" rel="nofollow">Start Hosting</a>
+                <a class="go outbound" data-network="Namecheap" href="REPLACE_WITH_NAMECHEAP_AFFILIATE" target="_blank" rel="nofollow noopener noreferrer sponsored">Find a Domain</a>
                 <span class="track">Clicks: <b data-clicks>0</b></span>
               </div>
             </div>
-            <div class="offer" data-offer-id="host2">
+
+            <div class="offer" data-offer-id="email">
+              <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=300&auto=format&fit=crop" alt="Email workspace" />
               <div>
-                <h4>Namecheap – Domains & SSL</h4>
-                <small>Affiliate • 20–50% commission</small>
+                <h4>Branded Email (your@domain.com)</h4>
+                <small>Look professional with Google Workspace or similar.</small>
               </div>
               <div class="actions">
-                <a class="go outbound" data-network="Namecheap" href="REPLACE_WITH_NAMECHEAP_AFFILIATE" target="_blank" rel="nofollow">Find a Domain</a>
+                <a class="go outbound" data-network="GoogleWorkspace" href="REPLACE_WITH_GWORKSPACE_AFFILIATE" target="_blank" rel="nofollow noopener noreferrer sponsored">Set Up Email</a>
                 <span class="track">Clicks: <b data-clicks>0</b></span>
               </div>
             </div>
-            <div class="offer" data-offer-id="host3">
+
+            <div class="offer" data-offer-id="design">
+              <img src="https://images.unsplash.com/photo-1519961655809-34fa156820f3?q=80&w=300&auto=format&fit=crop" alt="Graphic design tools" />
               <div>
-                <h4>Wix – Website Builder</h4>
-                <small>Affiliate • ~$100 per Premium</small>
+                <h4>Design Graphics & Banners</h4>
+                <small>Create thumbnails, logos, and social posts fast.</small>
               </div>
               <div class="actions">
-                <a class="go outbound" data-network="Wix" href="REPLACE_WITH_WIX_AFFILIATE" target="_blank" rel="nofollow">Build with Wix</a>
+                <a class="go outbound" data-network="Canva" href="REPLACE_WITH_CANVA_AFFILIATE" target="_blank" rel="nofollow noopener noreferrer sponsored">Open Canva</a>
+                <span class="track">Clicks: <b data-clicks>0</b></span>
+              </div>
+            </div>
+
+            <div class="offer" data-offer-id="emailmarketing">
+              <img src="https://images.unsplash.com/photo-1517433456452-f9633a875f6f?q=80&w=300&auto=format&fit=crop" alt="Email marketing dashboard" />
+              <div>
+                <h4>Email Marketing & Newsletters</h4>
+                <small>Collect leads and automate welcome sequences.</small>
+              </div>
+              <div class="actions">
+                <a class="go outbound" data-network="MailerLite" href="REPLACE_WITH_MAILERLITE_AFFILIATE" target="_blank" rel="nofollow noopener noreferrer sponsored">Start Email List</a>
                 <span class="track">Clicks: <b data-clicks>0</b></span>
               </div>
             </div>
           </div>
-          <p class="note">Content idea: “Start a blog in 10 minutes” → show steps → link here.</p>
+
+          <p class="note">No CPA offers here—just straightforward tools that work great with Wix.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SHOWCASE / SOCIAL PROOF STYLE BLOCK -->
+    <section class="grid">
+      <div class="col-12">
+        <div class="card">
+          <h3>Inspiration: Clean, Modern Site Styles</h3>
+          <div class="gallery">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=900&auto=format&fit=crop" alt="Minimal business website layout" />
+            <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=900&auto=format&fit=crop" alt="Creative portfolio layout" />
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=900&auto=format&fit=crop" alt="Tech blog layout" />
+          </div>
+          <p class="note">Build similar looks in Wix using templates and the drag-and-drop editor.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="grid">
+      <div class="col-12">
+        <div class="card">
+          <h3>FAQs</h3>
+          <details>
+            <summary>Is Wix good for beginners?</summary>
+            <p>Yes. The interface is intuitive, with templates, sections, and apps you can add by clicking. No coding is required.</p>
+          </details>
+          <details>
+            <summary>Can I sell products or services?</summary>
+            <p>Absolutely. Add the Wix Store or Bookings app to sell physical/digital items or take appointments and payments.</p>
+          </details>
+          <details>
+            <summary>How do I connect a custom domain?</summary>
+            <p>Upgrade to a Premium plan, then connect a domain you own (or buy one) and follow the guided steps inside Wix.</p>
+          </details>
         </div>
       </div>
     </section>
 
     <!-- Simple Stats / Tracking Table (LocalStorage only) -->
     <section class="stats card">
-      <h3>On‑Page Click Tracking (Private)</h3>
+      <h3>On-Page Click Tracking (Private)</h3>
       <p class="note">Counts clicks per button locally (stored in your browser via LocalStorage). Export anytime.</p>
       <table>
         <thead>
@@ -233,9 +292,12 @@
     </section>
 
     <footer>
-      <div class="badge">Telegram: <a href="https://t.me/yourusername" target="_blank">@yourusername</a></div>
+      <div class="badge">Telegram: <a href="https://t.me/yourusername" target="_blank" rel="noopener">@yourusername</a></div>
       <div class="badge">Email: <a href="mailto:youremail@example.com">youremail@example.com</a></div>
-      <p style="margin-top:12px;">Disclosure: Some links are affiliate/CPA links. We may earn a commission at no extra cost to you. We do not allow bots, VPN/proxy abuse, or self-completing offers.</p>
+      <p style="margin-top:12px;">
+        Disclosure: Some links are affiliate links. We may earn a commission at no extra cost to you.
+        We are not affiliated with or endorsed by Wix; we simply recommend it based on its features.
+      </p>
     </footer>
   </div>
 
@@ -275,12 +337,10 @@
       const utmParams = ['utm_source','utm_medium','utm_campaign','utm_content','utm_term'];
       const searchParams = new URLSearchParams();
       utmParams.forEach(p => { if (url.searchParams.get(p)) searchParams.set(p, url.searchParams.get(p)); });
-      const suffix = searchParams.toString();
-      if (!suffix) return;
+      if (!searchParams.toString()) return;
       document.querySelectorAll('a.outbound').forEach(a => {
         try {
           const link = new URL(a.href);
-          // preserve existing params
           const linkParams = new URLSearchParams(link.search);
           searchParams.forEach((v,k)=> linkParams.set(k,v));
           link.search = linkParams.toString();
@@ -293,8 +353,7 @@
       document.querySelectorAll('a.outbound').forEach(a => {
         a.addEventListener('click', () => {
           const card = a.closest('.offer');
-          if (!card) return;
-          const offerId = card.dataset.offerId;
+          const offerId = card ? card.dataset.offerId : (a.textContent.trim().toLowerCase().replace(/\s+/g,'-') || 'cta');
           const network = a.dataset.network || 'N/A';
           const now = new Date().toISOString();
           const stats = readStats();
@@ -332,4 +391,3 @@
   </script>
 </body>
 </html>
-
