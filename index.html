@@ -12,23 +12,31 @@
       background: #fff;
       color: #333;
     }
+    /* Header */
     header {
       background: #fff;
-      border-bottom: 2px solid #f97316; /* orange */
-      padding: 15px 0;
-      text-align: center;
+      border-bottom: 2px solid #f97316;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 50px;
     }
-    header nav a {
+    header img {
+      height: 50px;
+    }
+    nav a {
       margin: 0 15px;
       text-decoration: none;
       font-weight: bold;
       color: #333;
     }
-    header nav a:hover {
+    nav a:hover {
       color: #f97316;
     }
+
+    /* Hero */
     .hero {
-      background: url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&q=80&w=2000') no-repeat center center/cover;
+      background: url('https://images.unsplash.com/photo-1529101091764-c3526daf38fe?ixlib=rb-4.0.3&q=80&w=2000') no-repeat center center/cover;
       color: white;
       text-align: center;
       padding: 120px 20px;
@@ -38,7 +46,9 @@
       margin-bottom: 10px;
     }
     .hero p {
-      font-size: 1.2em;
+      font-size: 1.3em;
+      max-width: 700px;
+      margin: auto;
     }
     .btn {
       display: inline-block;
@@ -50,6 +60,8 @@
       text-decoration: none;
       font-weight: bold;
     }
+
+    /* Sections */
     section {
       padding: 60px 20px;
       max-width: 1100px;
@@ -59,6 +71,7 @@
       text-align: center;
       color: #f97316;
       margin-bottom: 30px;
+      font-size: 2em;
     }
     .grid {
       display: grid;
@@ -71,17 +84,22 @@
       border: 1px solid #eee;
       border-radius: 8px;
       box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      text-align: center;
     }
     .card img {
       width: 100%;
       border-radius: 6px;
       margin-bottom: 15px;
+      height: 180px;
+      object-fit: cover;
     }
+
+    /* Footer */
     footer {
       background: #f97316;
       color: white;
       text-align: center;
-      padding: 20px;
+      padding: 25px;
     }
     footer a {
       color: white;
@@ -91,8 +109,9 @@
   </style>
 </head>
 <body>
+  <!-- HEADER -->
   <header>
-    <img src="successor-logo.png" alt="Successor Tech Hub" width="60">
+    <img src="successor-logo.png" alt="Successor Tech Hub Logo">
     <nav>
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
@@ -102,53 +121,71 @@
     </nav>
   </header>
 
+  <!-- HERO -->
   <section class="hero">
     <h1>Build Your Future with Tech</h1>
-    <p>Learn coding, digital skills, and real-world problem solving at Successor-Tech Hub.</p>
+    <p>Learn coding, digital skills, and real-world problem solving at Successor-Tech Hub. 
+       Empower yourself with the knowledge to create and innovate.</p>
     <a href="about.html" class="btn">Explore Programs</a>
   </section>
 
+  <!-- LEARNING PROGRAMS -->
   <section>
     <h2>What You’ll Learn</h2>
     <div class="grid">
       <div class="card">
-        <img src="https://images.unsplash.com/photo-1581093588401-22d9df141b1a?ixlib=rb-4.0.3&q=80&w=800" alt="HTML & CSS">
+        <img src="https://images.unsplash.com/photo-1581090700227-4c4f50b4c6f2?ixlib=rb-4.0.3&q=80&w=800" alt="HTML & CSS">
         <h3>HTML & CSS</h3>
-        <p>Master the building blocks of web development with hands-on projects.</p>
+        <p>Master the building blocks of modern web design with hands-on projects.</p>
       </div>
       <div class="card">
-        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&q=80&w=800" alt="JavaScript">
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&q=80&w=800" alt="JavaScript">
         <h3>JavaScript</h3>
-        <p>Bring websites to life with interactivity and dynamic features.</p>
+        <p>Create interactive, dynamic websites and apps with JavaScript.</p>
       </div>
       <div class="card">
-        <img src="https://images.unsplash.com/photo-1526378722484-cf6a5c1b9f6b?ixlib=rb-4.0.3&q=80&w=800" alt="WordPress">
+        <img src="https://images.unsplash.com/photo-1580894908361-967195033927?ixlib=rb-4.0.3&q=80&w=800" alt="WordPress">
         <h3>WordPress</h3>
         <p>Learn how to build and manage professional websites using WordPress.</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1588072432836-e10032774350?ixlib=rb-4.0.3&q=80&w=800" alt="Digital Marketing">
+        <h3>Digital Marketing</h3>
+        <p>Grow online presence through SEO, ads, and social media strategies.</p>
       </div>
     </div>
   </section>
 
+  <!-- ACTIVITIES -->
   <section>
     <h2>Activities & Projects</h2>
     <div class="grid">
       <div class="card">
+        <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&q=80&w=800" alt="Hackathons">
         <h3>Hackathons</h3>
-        <p>Compete in exciting challenges to test your skills and creativity.</p>
+        <p>Join exciting hackathons where teams build projects in 48 hours.</p>
       </div>
       <div class="card">
+        <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&q=80&w=800" alt="Group Projects">
         <h3>Group Projects</h3>
-        <p>Collaborate with peers to build complete apps and websites.</p>
+        <p>Work with peers to solve real-life problems using tech solutions.</p>
       </div>
       <div class="card">
+        <img src="https://images.unsplash.com/photo-1521791055366-0d553872125f?ixlib=rb-4.0.3&q=80&w=800" alt="Portfolio Development">
         <h3>Portfolio Development</h3>
-        <p>Create real-world projects to showcase your talent to employers.</p>
+        <p>Graduate with a strong portfolio that impresses employers.</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1526378722484-cf6a5c1b9f6b?ixlib=rb-4.0.3&q=80&w=800" alt="Tech Talks">
+        <h3>Tech Talks</h3>
+        <p>Attend workshops and talks from industry experts and mentors.</p>
       </div>
     </div>
   </section>
 
+  <!-- TESTIMONIALS -->
   <section>
-    <h2>Testimonials</h2>
+    <h2>What Our Students Say</h2>
     <div class="grid">
       <div class="card">
         <p>“Joining Successor-Tech Hub changed my life. I built my first website within 2 months!”</p>
@@ -158,9 +195,14 @@
         <p>“The instructors are supportive and the projects are real-world. Highly recommend!”</p>
         <strong>- Chinedu, Graduate</strong>
       </div>
+      <div class="card">
+        <p>“From beginner to job-ready developer, Successor-Tech Hub gave me confidence.”</p>
+        <strong>- Samuel, Alumni</strong>
+      </div>
     </div>
   </section>
 
+  <!-- CALL TO ACTION -->
   <section>
     <h2>Get Started Today</h2>
     <p style="text-align:center;">Take your first step into tech. Learn, build, and grow with us.</p>
@@ -169,6 +211,7 @@
     </div>
   </section>
 
+  <!-- FOOTER -->
   <footer>
     <img src="successor-logo.png" alt="Successor Tech Hub" width="50"><br>
     <p>&copy; 2025 Successor-Tech Hub. All rights reserved.</p>
