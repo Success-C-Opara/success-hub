@@ -1,393 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Success Digital Hub – Build with Wix & Essential Tools</title>
-  <meta name="description" content="Learn why Wix is a top website builder, see real use-cases, and start your site today. Plus: domains, branded email, design, and marketing tools that pair perfectly with Wix." />
-  <meta name="robots" content="index,follow" />
-
-  <!-- Open Graph / Social -->
-  <meta property="og:title" content="Success Digital Hub – Build with Wix & Essential Tools" />
-  <meta property="og:description" content="Launch a professional website with Wix. Step-by-step guidance, examples, and the best supporting tools." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://yourusername.github.io/" />
-  <meta property="og:image" content="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop" />
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Successor-Tech Hub | Home</title>
+  <link rel="icon" type="image/png" href="successor-logo.png">
   <style>
-    :root {
-      --bg: #0b0f14;
-      --card: #101620;
-      --text: #e8eef7;
-      --muted: #9fb3c8;
-      --brand: #4cc9f0;
-      --accent: #80ffdb;
-      --ok: #51cf66;
-      --warning: #ffd43b;
-      --shadow: 0 10px 30px rgba(0,0,0,.3);
-      --radius: 16px;
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+      color: #333;
     }
-    * { box-sizing: border-box; }
-    html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font-family: system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, sans-serif; }
-    a { color: var(--brand); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    img { max-width: 100%; display: block; border-radius: 12px; }
-
-    .container { max-width: 1100px; margin: 0 auto; padding: 20px; }
-
-    header { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 16px 0; }
-    .logo { display: flex; align-items: center; gap: 12px; }
-    .logo .mark { width: 40px; height: 40px; border-radius: 12px; background: linear-gradient(135deg, var(--brand), var(--accent)); box-shadow: var(--shadow); }
-    .logo h1 { font-size: 20px; margin: 0; letter-spacing: .2px; }
-
-    .cta-bar { display: flex; gap: 10px; flex-wrap: wrap; }
-    .btn { border: 0; padding: 10px 14px; border-radius: 12px; background: var(--brand); color: #021018; font-weight: 700; cursor: pointer; box-shadow: var(--shadow); }
-    .btn.secondary { background: transparent; border: 1px solid #203040; color: var(--text); }
-
-    .hero { margin-top: 12px; background: radial-gradient(1200px 400px at 10% -20%, rgba(76,201,240,.15), transparent 60%), radial-gradient(1000px 400px at 100% 0%, rgba(128,255,219,.12), transparent 60%), var(--card); border: 1px solid #1b2533; padding: 28px; border-radius: var(--radius); box-shadow: var(--shadow);}
-    .hero h2 { margin: 0 0 10px; font-size: 28px; }
-    .hero p { margin: 0; color: var(--muted); }
-    .hero .chips { margin-top: 16px; display: flex; gap: 8px; flex-wrap: wrap; }
-    .chip { font-size: 12px; border: 1px solid #233245; padding: 6px 10px; border-radius: 999px; color: var(--muted); }
-
-    .grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 16px; margin-top: 22px; }
-    .col-4 { grid-column: span 4; }
-    .col-6 { grid-column: span 6; }
-    .col-8 { grid-column: span 8; }
-    .col-12 { grid-column: span 12; }
-    @media (max-width: 900px) { .col-6, .col-4, .col-8 { grid-column: span 12; } }
-
-    .card { background: var(--card); border: 1px solid #1b2533; border-radius: var(--radius); padding: 18px; box-shadow: var(--shadow); }
-    .card h3 { margin: 0 0 6px; font-size: 18px; }
-    .card p { margin: 0; color: var(--muted); }
-
-    .offers { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-top: 12px; }
-    @media (max-width: 700px) { .offers { grid-template-columns: 1fr; } }
-
-    .offer { background: #0e141d; border: 1px solid #1b2533; border-radius: 14px; padding: 14px; display: grid; grid-template-columns: 60px 1fr auto; align-items: center; gap: 12px; }
-    .offer h4 { margin: 0; font-size: 16px; }
-    .offer small { color: var(--muted); display: block; margin-top: 2px; }
-    .offer .actions { display: flex; gap: 8px; align-items: center; }
-    .offer .go { background: var(--accent); color: #06221e; font-weight: 700; border: 0; padding: 8px 12px; border-radius: 10px; cursor: pointer; }
-    .offer .track { font-size: 12px; color: var(--muted); }
-
-    .note { font-size: 12px; color: var(--muted); margin-top: 10px; }
-
-    .bullets { margin: 10px 0 0; padding-left: 18px; color: var(--muted); }
-    .bullets li { margin: 6px 0; }
-
-    .gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 12px; }
-    @media (max-width: 700px) { .gallery { grid-template-columns: 1fr; } }
-
-    .stats { margin-top: 18px; }
-    table { width: 100%; border-collapse: collapse; }
-    th, td { padding: 10px; border-bottom: 1px solid #1b2533; text-align: left; font-size: 14px; }
-    th { color: #aac1d8; }
-
-    footer { margin: 28px 0 50px; color: var(--muted); font-size: 13px; }
-    .badge { display:inline-block; padding: 6px 10px; border: 1px solid #223246; border-radius: 999px; margin-right: 8px; }
+    header {
+      background: #004080;
+      color: white;
+      padding: 15px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    header img {
+      height: 50px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: orange;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f') no-repeat center center/cover;
+      height: 90vh;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 15px;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+    .btn {
+      background: orange;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      font-size: 1rem;
+      cursor: pointer;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    .btn:hover {
+      background: #e69500;
+    }
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+    section h2 {
+      color: #004080;
+      margin-bottom: 20px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+    .card {
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      background: #f9f9f9;
+    }
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+    footer {
+      background: #004080;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
   </style>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <div class="logo">
-        <div class="mark" aria-hidden="true"></div>
-        <h1>Success Digital Hub</h1>
-      </div>
-      <div class="cta-bar">
-        <button class="btn secondary" id="copyLink">Copy This Page Link</button>
-        <a class="btn" href="#start-wix">Start with Wix</a>
-      </div>
-    </header>
+  <header>
+    <img src="successor-logo.png" alt="Successor-Tech Hub Logo">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="curriculum.html">Curriculum</a>
+      <a href="activities.html">Activities</a>
+      <a href="blog.html">Blog</a>
+      <a href="testimonials.html">Testimonials</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
 
-    <section class="hero">
-      <div class="grid">
-        <div class="col-8">
-          <h2>Launch a Professional Website with Wix</h2>
-          <p>Wix makes it easy to build a beautiful, secure website—no coding needed. Pick a template, customize with drag-and-drop, add bookings, a store, or a blog, and publish in minutes.</p>
-          <div class="chips">
-            <span class="chip">Drag-and-drop editor</span>
-            <span class="chip">Templates for any niche</span>
-            <span class="chip">SEO & analytics</span>
-            <span class="chip">E-commerce & bookings</span>
-          </div>
-          <div style="margin-top:14px; display:flex; gap:10px; flex-wrap:wrap;">
-            <a class="btn outbound" data-network="Wix" href="REPLACE_WITH_WIX_AFFILIATE" target="_blank" rel="nofollow noopener noreferrer sponsored">Build with Wix</a>
-            <a class="btn secondary" href="#why-wix">Why Wix?</a>
-          </div>
-        </div>
-        <div class="col-4">
-          <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=900&auto=format&fit=crop" alt="Person building a website on a laptop" />
-        </div>
-      </div>
-    </section>
-
-    <!-- WHY WIX -->
-    <section id="why-wix" class="grid">
-      <div class="col-6">
-        <div class="card">
-          <h3>Why Choose Wix</h3>
-          <ul class="bullets">
-            <li><strong>Fast start:</strong> AI-assisted setup and 900+ templates.</li>
-            <li><strong>All-in-one:</strong> hosting, security, backups, and a global CDN included.</li>
-            <li><strong>Sell anything:</strong> products, services, digital goods, courses, subscriptions.</li>
-            <li><strong>Grow:</strong> built-in SEO, analytics, email automations, and app integrations.</li>
-            <li><strong>Scales with you:</strong> upgrade features as your business grows.</li>
-          </ul>
-          <div style="margin-top:12px;">
-            <a class="btn outbound" data-network="Wix" href="REPLACE_WITH_WIX_AFFILIATE" target="_blank" rel="nofollow noopener noreferrer sponsored">Start Free on Wix</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-6">
-        <div class="card">
-          <h3>What You Can Build</h3>
-          <div class="gallery">
-            <img src="https://images.unsplash.com/photo-1529336953121-ad5a0d43d0d2?q=80&w=800&auto=format&fit=crop" alt="Online store example" />
-            <img src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?q=80&w=800&auto=format&fit=crop" alt="Portfolio website example" />
-            <img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=800&auto=format&fit=crop" alt="Business website example" />
-          </div>
-          <p class="note">Images are illustrative—your site design is fully customizable.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- STEP BY STEP -->
-    <section id="start-wix" class="grid">
-      <div class="col-12">
-        <div class="card">
-          <h3>Quick Start: Build Your Site in 5 Steps</h3>
-          <ol class="bullets" style="list-style: decimal;">
-            <li>Click <em>Build with Wix</em> and create a free account.</li>
-            <li>Choose a template or use the AI site builder for a tailored start.</li>
-            <li>Customize pages with drag-and-drop: text, images, sections, and apps.</li>
-            <li>Add features: online store, bookings, blog, payments, and SEO basics.</li>
-            <li>Connect a domain and publish. Upgrade to a Premium plan when ready.</li>
-          </ol>
-          <div style="margin-top:12px;">
-            <a class="btn outbound" data-network="Wix" href="REPLACE_WITH_WIX_AFFILIATE" target="_blank" rel="nofollow noopener noreferrer sponsored">Try Wix Free</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- COMPLEMENTARY TOOLS (NON-CPA) -->
-    <section id="tools" class="grid">
-      <div class="col-12">
-        <div class="card">
-          <h3>Essential Tools to Pair with Wix</h3>
-          <p>These services complement your Wix site and help you look professional from day one.</p>
-
-          <div class="offers">
-            <div class="offer" data-offer-id="domains">
-              <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=300&auto=format&fit=crop" alt="Domain search illustration" />
-              <div>
-                <h4>Get a Custom Domain</h4>
-                <small>Claim your brand name and connect it to your Wix site.</small>
-              </div>
-              <div class="actions">
-                <a class="go outbound" data-network="Namecheap" href="REPLACE_WITH_NAMECHEAP_AFFILIATE" target="_blank" rel="nofollow noopener noreferrer sponsored">Find a Domain</a>
-                <span class="track">Clicks: <b data-clicks>0</b></span>
-              </div>
-            </div>
-
-            <div class="offer" data-offer-id="email">
-              <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=300&auto=format&fit=crop" alt="Email workspace" />
-              <div>
-                <h4>Branded Email (your@domain.com)</h4>
-                <small>Look professional with Google Workspace or similar.</small>
-              </div>
-              <div class="actions">
-                <a class="go outbound" data-network="GoogleWorkspace" href="REPLACE_WITH_GWORKSPACE_AFFILIATE" target="_blank" rel="nofollow noopener noreferrer sponsored">Set Up Email</a>
-                <span class="track">Clicks: <b data-clicks>0</b></span>
-              </div>
-            </div>
-
-            <div class="offer" data-offer-id="design">
-              <img src="https://images.unsplash.com/photo-1519961655809-34fa156820f3?q=80&w=300&auto=format&fit=crop" alt="Graphic design tools" />
-              <div>
-                <h4>Design Graphics & Banners</h4>
-                <small>Create thumbnails, logos, and social posts fast.</small>
-              </div>
-              <div class="actions">
-                <a class="go outbound" data-network="Canva" href="REPLACE_WITH_CANVA_AFFILIATE" target="_blank" rel="nofollow noopener noreferrer sponsored">Open Canva</a>
-                <span class="track">Clicks: <b data-clicks>0</b></span>
-              </div>
-            </div>
-
-            <div class="offer" data-offer-id="emailmarketing">
-              <img src="https://images.unsplash.com/photo-1517433456452-f9633a875f6f?q=80&w=300&auto=format&fit=crop" alt="Email marketing dashboard" />
-              <div>
-                <h4>Email Marketing & Newsletters</h4>
-                <small>Collect leads and automate welcome sequences.</small>
-              </div>
-              <div class="actions">
-                <a class="go outbound" data-network="MailerLite" href="REPLACE_WITH_MAILERLITE_AFFILIATE" target="_blank" rel="nofollow noopener noreferrer sponsored">Start Email List</a>
-                <span class="track">Clicks: <b data-clicks>0</b></span>
-              </div>
-            </div>
-          </div>
-
-          <p class="note">No CPA offers here—just straightforward tools that work great with Wix.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- SHOWCASE / SOCIAL PROOF STYLE BLOCK -->
-    <section class="grid">
-      <div class="col-12">
-        <div class="card">
-          <h3>Inspiration: Clean, Modern Site Styles</h3>
-          <div class="gallery">
-            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=900&auto=format&fit=crop" alt="Minimal business website layout" />
-            <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=900&auto=format&fit=crop" alt="Creative portfolio layout" />
-            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=900&auto=format&fit=crop" alt="Tech blog layout" />
-          </div>
-          <p class="note">Build similar looks in Wix using templates and the drag-and-drop editor.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- FAQ -->
-    <section class="grid">
-      <div class="col-12">
-        <div class="card">
-          <h3>FAQs</h3>
-          <details>
-            <summary>Is Wix good for beginners?</summary>
-            <p>Yes. The interface is intuitive, with templates, sections, and apps you can add by clicking. No coding is required.</p>
-          </details>
-          <details>
-            <summary>Can I sell products or services?</summary>
-            <p>Absolutely. Add the Wix Store or Bookings app to sell physical/digital items or take appointments and payments.</p>
-          </details>
-          <details>
-            <summary>How do I connect a custom domain?</summary>
-            <p>Upgrade to a Premium plan, then connect a domain you own (or buy one) and follow the guided steps inside Wix.</p>
-          </details>
-        </div>
-      </div>
-    </section>
-
-    <!-- Simple Stats / Tracking Table (LocalStorage only) -->
-    <section class="stats card">
-      <h3>On-Page Click Tracking (Private)</h3>
-      <p class="note">Counts clicks per button locally (stored in your browser via LocalStorage). Export anytime.</p>
-      <table>
-        <thead>
-          <tr>
-            <th>Offer ID</th>
-            <th>Network</th>
-            <th>Clicks</th>
-            <th>Last Click</th>
-          </tr>
-        </thead>
-        <tbody id="statsBody"></tbody>
-      </table>
-      <div style="margin-top:12px; display:flex; gap:8px; flex-wrap:wrap;">
-        <button class="btn secondary" id="exportCSV">Export CSV</button>
-        <button class="btn secondary" id="resetClicks">Reset Clicks</button>
-      </div>
-    </section>
-
-    <footer>
-      <div class="badge">Telegram: <a href="https://t.me/yourusername" target="_blank" rel="noopener">@yourusername</a></div>
-      <div class="badge">Email: <a href="mailto:youremail@example.com">youremail@example.com</a></div>
-      <p style="margin-top:12px;">
-        Disclosure: Some links are affiliate links. We may earn a commission at no extra cost to you.
-        We are not affiliated with or endorsed by Wix; we simply recommend it based on its features.
-      </p>
-    </footer>
+  <div class="hero">
+    <h1>Welcome to Successor-Tech Hub</h1>
+    <p>Learn web development, digital marketing, and tech skills for the future.</p>
+    <a href="about.html" class="btn">Explore Our Programs</a>
   </div>
 
-  <script>
-    /* ======================================================
-       Lightweight Tracking + UTM propagation (no backend)
-       - Tracks clicks per offer in LocalStorage
-       - Appends UTM params from current URL to outbound links
-       - Exports stats to CSV for your Google Sheet
-       ====================================================== */
+  <section>
+    <h2>What You Will Learn</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c" alt="Web Development">
+        <h3>Web Development</h3>
+        <p>Master HTML, CSS, JavaScript and build real-world websites from scratch.</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1559526324-593bc073d938" alt="Digital Marketing">
+        <h3>Digital Marketing</h3>
+        <p>Learn SEO, content creation, and strategies to grow online businesses.</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216" alt="Software Tools">
+        <h3>Software Tools</h3>
+        <p>Get hands-on experience with tools that power startups and enterprises.</p>
+      </div>
+    </div>
+  </section>
 
-    const LS_KEY = 'sdh_click_stats_v1';
-
-    const readStats = () => JSON.parse(localStorage.getItem(LS_KEY) || '{}');
-    const writeStats = (data) => localStorage.setItem(LS_KEY, JSON.stringify(data));
-
-    function updateTable() {
-      const stats = readStats();
-      const tbody = document.getElementById('statsBody');
-      tbody.innerHTML = '';
-      Object.values(stats).forEach(row => {
-        const tr = document.createElement('tr');
-        tr.innerHTML = `<td>${row.offerId}</td><td>${row.network}</td><td>${row.clicks}</td><td>${row.lastClick || '-'}</td>`;
-        tbody.appendChild(tr);
-      });
-      // Reflect per-offer counters in UI
-      document.querySelectorAll('.offer').forEach(card => {
-        const id = card.dataset.offerId;
-        const clicks = stats[id]?.clicks || 0;
-        const el = card.querySelector('[data-clicks]');
-        if (el) el.textContent = clicks;
-      });
-    }
-
-    function appendUtmParamsToLinks() {
-      const url = new URL(window.location.href);
-      const utmParams = ['utm_source','utm_medium','utm_campaign','utm_content','utm_term'];
-      const searchParams = new URLSearchParams();
-      utmParams.forEach(p => { if (url.searchParams.get(p)) searchParams.set(p, url.searchParams.get(p)); });
-      if (!searchParams.toString()) return;
-      document.querySelectorAll('a.outbound').forEach(a => {
-        try {
-          const link = new URL(a.href);
-          const linkParams = new URLSearchParams(link.search);
-          searchParams.forEach((v,k)=> linkParams.set(k,v));
-          link.search = linkParams.toString();
-          a.href = link.toString();
-        } catch(e) { /* ignore invalid URLs (placeholders) */ }
-      });
-    }
-
-    function handleClicks() {
-      document.querySelectorAll('a.outbound').forEach(a => {
-        a.addEventListener('click', () => {
-          const card = a.closest('.offer');
-          const offerId = card ? card.dataset.offerId : (a.textContent.trim().toLowerCase().replace(/\s+/g,'-') || 'cta');
-          const network = a.dataset.network || 'N/A';
-          const now = new Date().toISOString();
-          const stats = readStats();
-          stats[offerId] = stats[offerId] || { offerId, network, clicks: 0, lastClick: null };
-          stats[offerId].clicks += 1;
-          stats[offerId].lastClick = now;
-          writeStats(stats);
-          updateTable();
-        });
-      });
-    }
-
-    function exportCSV() {
-      const stats = readStats();
-      const rows = [['offer_id','network','clicks','last_click']];
-      Object.values(stats).forEach(s => rows.push([s.offerId, s.network, s.clicks, s.lastClick || '']));
-      const csv = rows.map(r => r.map(v => '"'+String(v).replaceAll('"','""')+'"').join(',')).join('\n');
-      const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
-      const url = URL.createObjectURL(blob);
-      const a = document.createElement('a');
-      a.href = url; a.download = 'click_stats.csv'; a.click();
-      URL.revokeObjectURL(url);
-    }
-
-    document.getElementById('exportCSV').addEventListener('click', exportCSV);
-    document.getElementById('resetClicks').addEventListener('click', () => { localStorage.removeItem(LS_KEY); updateTable(); });
-    document.getElementById('copyLink').addEventListener('click', async () => {
-      try { await navigator.clipboard.writeText(window.location.href); alert('Link copied!'); } catch(e) { alert('Copy failed.'); }
-    });
-
-    // Init
-    appendUtmParamsToLinks();
-    handleClicks();
-    updateTable();
-  </script>
+  <footer>
+    <p>&copy; 2025 Successor-Tech Hub | All Rights Reserved</p>
+  </footer>
 </body>
 </html>
