@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Successor-Tech Hub | Blog</title>
+  <link rel="icon" type="image/png" href="images/successor-logo2.png">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fff;
+      color: #333;
+    }
+    header {
+      background: #fff;
+      border-bottom: 2px solid #f97316;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 50px;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      color: #333;
+      transition: color 0.3s ease;
+    }
+    nav a:hover { color: #f97316; }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=2000&q=80') no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+    .hero h1 { font-size: 3em; margin-bottom: 10px; }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    section h2 {
+      text-align: center;
+      color: #f97316;
+      margin-bottom: 30px;
+      font-size: 2em;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #fff;
+      padding: 20px;
+      border: 1px solid #eee;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    .card img {
+      width: 100%;
+      border-radius: 6px;
+      margin-bottom: 15px;
+      height: 200px;
+      object-fit: cover;
+    }
+    .card h3 { margin-top: 0; color: #f97316; }
+    .card p { font-size: 0.95em; line-height: 1.6; }
+
+    #logo {
+      height: 10vh;
+      width: 14%;
+    }
+    #favicon {
+      height: 100%;
+      width: 100%;
+    }
+    #icon {
+      height: 100vh;
+      width: 100%;
+    }
+    footer {
+      background: #f97316;
+      color: white;
+      text-align: center;
+      padding: 25px;
+      margin-top: 40px;
+    }
+    footer a { color: white; margin: 0 10px; text-decoration: none; }
+  </style>
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <div id="logo">
+      <img id="favicon" src="images/successor-logo.png" alt="Successor Tech Hub Logo">
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Our Blog</h1>
+    <p>Insights, tutorials, and updates from the Successor-Tech Hub community.</p>
+  </section>
+
+
+
+  <!-- MARKETING SECTION -->
+<section>
+  <h2>Marketing & Growth Insights</h2>
+  <div class="grid">
+
+    <!-- Wix Post -->
+    <div class="card">
+      
+<img 
+    src="https://picsum.photos/seed/techwix3/800/600" 
+    alt="Wix Tech Design"
+    onerror="this.onerror=null;this.src='https://picsum.photos/800/600?random=23';"
+  >
+
+    
+      <h3>Why Wix is Great for Small Businesses</h3>
+      <p>Wix offers easy drag-and-drop tools, professional templates, and built-in hosting. 
+         It’s perfect for startups and small businesses that want to get online quickly 
+         without needing deep coding knowledge.</p>
+    </div>
+
+    <!-- WordPress Post -->
+    <div class="card">
+      <img 
+        src="https://images.unsplash.com/photo-1505685296765-3a2736de412f?auto=format&fit=crop&w=800&q=80" 
+        alt="WordPress Platform">
+      <h3>The Power of WordPress</h3>
+      <p>WordPress powers over 40% of all websites worldwide. Its plugins, themes, and 
+         flexibility make it the top choice for blogging, eCommerce, and professional websites.</p>
+    </div>
+
+    <!-- Content Building Post -->
+    <div class="card">
+      <img 
+        src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=800&q=80" 
+        alt="Content Building">
+      <h3>Content is King: Build & Grow</h3>
+      <p>High-quality content builds trust, improves SEO, and attracts the right audience. 
+         Consistent blogging and content strategy help brands grow online visibility 
+         and authority in their niche.</p>
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- BLOG POSTS -->
+  <section>
+    <h2>Latest Articles</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f?auto=format&fit=crop&w=800&q=80" alt="Web Development">
+        <h3>Getting Started with Web Development</h3>
+        <p>Learn how to build your first website using HTML, CSS, and JavaScript in simple steps.</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&w=800&q=80" alt="AI and Machine Learning">
+        <h3>The Future of AI and Machine Learning</h3>
+        <p>Explore how artificial intelligence is changing industries and creating new opportunities.</p>
+      </div>
+      <div class="card">
+         <img 
+    src="https://images.unsplash.com/photo-1559028012-481c04fa702d?auto=format&fit=crop&w=800&q=80" 
+    alt="UI/UX Design">
+        <h3>Why UI/UX Design Matters</h3>
+        <p>Discover how great design improves user experience and drives product success.</p>
+      </div>
+      <div class="card">
+       <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80" alt="Career in Tech">
+        <h3>Building a Career in Tech</h3>
+        <p>Practical tips on creating a portfolio, preparing for interviews, and landing your dream job.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div id="logo">
+      <img id="favicon" src="images/successor-logo.png" alt="Successor Tech Hub Logo">
+    </div>
+    <br><br>
+    <p>&copy; 2025 Successor-Tech Hub. All rights reserved.</p>
+    <p>
+      <a href="about.html">About</a> |
+      <a href="blog.html">Blog</a> |
+      <a href="contact.html">Contact</a>
+    </p>
+  </footer>
+</body>
+</html>
